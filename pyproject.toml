@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "network-optimizer"
+version = "0.1.0"
+description = "网络延迟优化 Agent — 5 层诊断，全面优化网络性能"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Network Optimizer Team"}
+]
+
+[project.scripts]
+netopt = "network_optimizer.__main__:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
